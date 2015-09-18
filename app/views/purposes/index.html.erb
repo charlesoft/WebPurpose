@@ -1,0 +1,33 @@
+<h1>Listing Purposes</h1>
+
+<table class="table table-striped">
+	<tr>
+		<th>Name</th>
+		<th>Description</th>
+		<th>Coin</th>
+		<th>Start Date</th>
+		<th>End Date</th>
+		<th>City</th>
+		<th class="col-md-1">Actions</th>
+		<th></th>
+	</tr>
+
+	<tbody>
+		<% @purposes.each do |purpose| %>
+		<tr>
+			<td><%=purpose.name %></td>
+			<td><%=purpose.description %></td>
+			<td><%=number_to_currency(purpose.value, unit: "R$", separator: ".", delimiter: ",") %></td>
+			<td><%=purpose.start_date %></td>
+			<td><%=purpose.end_date %></td>
+			<td><%=purpose.city %></td>
+			<td><%=link_to "Edit", edit_purpose_path(purpose) %></td>
+			<td><%=link_to "Delete", purpose , method: :delete, data: {confirm: "Are you sure? "} %></td>
+		</tr>
+		<% end  %>
+
+	</tbody>
+
+</table>
+
+<%=link_to "New Purpose", new_purpose_path, :class => "btn btn-primary" %>
