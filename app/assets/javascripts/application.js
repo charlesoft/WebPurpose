@@ -12,6 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.validate
 //= require turbolinks
 //= require typeahead.js
 //= require bootstrap.min.js
+
+
+

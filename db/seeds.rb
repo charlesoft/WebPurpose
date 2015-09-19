@@ -8,4 +8,10 @@
 
 
 #Purpose.create(:name => "Projeto social", :description => "Projeto para ajudar bla bla...", :value => "3000,00", :start_date => Date.new(2001,2,3), :end_date => Date.new(2001,2,3), :city => "Belo Horizonte")
-Purpose.create(:name => "Projeto social", :description => "Projeto para ajudar bla bla...", :value => "3000", :start_date => Date.new(2001,2,3), :end_date => Date.new(2001,2,3), :city => "Belo Horizonte")
+Purpose.create(:name => "Projeto Futebolistico", :description => "Projeto futebolistico...", :value => "3000", :start_date => Date.new(2016,2,3), :end_date => Date.new(2017,2,3), :city => "Belo Horizonte")
+Purpose.create(:name => "Projeto de Artigos", :description => "Projeto para uniao de artigos...", :value => "3000", :start_date => Date.new(2016,2,3), :end_date => Date.new(2017,2,3), :city => "Sao Paulo")
+Purpose.create(:name => "Projeto De Informatica", :description => "Projeto voltado para bioinformatica...", :value => "3000", :start_date => Date.new(2016,2,3), :end_date => Date.new(2017,2,3), :city => "Rio de Janeiro")
+Purpose.create(:name => "Projeto Social", :description => "Projeto social..", :value => "3000", :start_date => Date.new(2016,2,3), :end_date => Date.new(2017,2,3), :city => "Betim")
+Purpose.create(:name => "Projeto para a rua", :description => "Projeto vem pra rua...", :value => "3000", :start_date => Date.new(2016,2,3), :end_date => Date.new(2017,2,3), :city => "Curitiba")
+Purpose.create(:name => "Projeto Futebol", :description => "Projeto futebol...", :value => "3000", :start_date => Date.new(2016,2,3), :end_date => Date.new(2017,2,3), :city => "Belo Horizonte")
+Purpose.create(:name => "Projeto Aleatorio", :description => "Projeto aleatorio...", :value => "3000", :start_date => Date.new(2016,2,3), :end_date => Date.new(2017,2,3), :city => "Contagem")

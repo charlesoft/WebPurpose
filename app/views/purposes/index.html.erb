@@ -4,7 +4,7 @@
 	<tr>
 		<th>Name</th>
 		<th>Description</th>
-		<th>Coin</th>
+		<th>Value</th>
 		<th>Start Date</th>
 		<th>End Date</th>
 		<th>City</th>
@@ -15,11 +15,11 @@
 	<tbody>
 		<% @purposes.each do |purpose| %>
 		<tr>
-			<td><%=purpose.name %></td>
+			<td><%=link_to purpose.name, purpose %></td>
 			<td><%=purpose.description %></td>
 			<td><%=number_to_currency(purpose.value, unit: "R$", separator: ".", delimiter: ",") %></td>
-			<td><%=purpose.start_date %></td>
-			<td><%=purpose.end_date %></td>
+			<td><%=purpose.start_date.strftime("%d/%m/%Y") %></td>
+			<td><%=purpose.end_date.strftime("%d/%m/%Y") %></td>
 			<td><%=purpose.city %></td>
 			<td><%=link_to "Edit", edit_purpose_path(purpose) %></td>
 			<td><%=link_to "Delete", purpose , method: :delete, data: {confirm: "Are you sure? "} %></td>

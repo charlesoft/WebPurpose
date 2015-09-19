@@ -13,6 +13,9 @@ class PurposesController < ApplicationController
 	def create
 		@purpose = Purpose.new(purpose_params)
 
+		@purpose.start_date = Date.new(purpose_params['start_date(1i)'].to_i, purpose_params['start_date(2i)'].to_i,purpose_params['start_date(3i)'].to_i)
+		@purpose.end_date = Date.new(purpose_params['end_date(1i)'].to_i, purpose_params['end_date(2i)'].to_i,purpose_params['end_date(3i)'].to_i)
+
 		respond_to do |format|
 			if @purpose.save
 				format.html {redirect_to @purpose, notice: "Purpose created sucessfully!"}
