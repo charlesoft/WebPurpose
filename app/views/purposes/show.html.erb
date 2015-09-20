@@ -5,7 +5,7 @@
 <div>
 	<p> <b>Name: </b> <%=@purpose.name %></p>
 	<p> <b>Description: </b><%=@purpose.description %></p>
-	<p> <b>Valuer: </b><%=number_to_currency(@purpose.description, unit: "R$", separator: ".", delimiter: ",") %></p>
+	<p> <b>Valuer: </b><%=number_to_currency(@purpose.value, unit: "R$", separator: ",", delimiter: ".") %></p>
 	<p> <b>Start Date: </b><%=@purpose.start_date %></p>
 	<p> <b>End Date: </b><%=@purpose.end_date %></p>
 	<p> <b>City: </b><%=@purpose.city %></p>
