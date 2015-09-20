@@ -17,10 +17,12 @@
 
 <div class="form-group">
 	<%= f.label :start_date, "Start Date:" %>
-	<%= f.date_select :start_date, order: [:day, :month, :year], prompt: {day: "Select a day", month: "Select a month", year: "Select a year"} %>
+	<%= f.date_select :start_date, {order: [:day, :month, :year], prompt: {day: "Select a day", month: "Select a month", year: "Select a year"}}, required: true %>
+</div>
 
+<div class="form-group">
 	<%= f.label :end_date, " End Date:" %>
-	<%= f.date_select :end_date, order: [:day, :month, :year], prompt: {day: "Select a day", month: "Select a month", year: "Select a year"} %>
+	<%= f.date_select :end_date, {order: [:day, :month, :year], prompt: {day: "Select a day", month: "Select a month", year: "Select a year"}}, :required => true %>
 </div>
 
 <div class="form-group">
