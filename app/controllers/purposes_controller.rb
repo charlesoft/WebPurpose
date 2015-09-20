@@ -37,7 +37,7 @@ class PurposesController < ApplicationController
 
 	def update
 		respond_to do |format|
-			if @purpose.update
+			if @purpose.update_attributes(purpose_params)
 				format.html {redirect_to @purpose, notice: "Purpose updated sucessfully!"}
 				format.json {render action: 'show',status: :created, location: @purpose}
 			else
